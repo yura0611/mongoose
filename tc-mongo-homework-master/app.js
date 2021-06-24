@@ -7,7 +7,7 @@ const app = express();
 
 
 const mongoose = require('mongoose');
-const dev_db_url = 'mongodb+srv://user1:YuRa0611@todos.yhnva.mongodb.net/mongoose-homework?retryWrites=true&w=majority';
+const dev_db_url = 'mongodb+srv://user1:<password>@todos.yhnva.mongodb.net/mongoose-homework?retryWrites=true&w=majority';
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 const dbOptions = { useUnifiedTopology: true, useNewUrlParser: true};
 mongoose.connect(mongoDB, dbOptions);
